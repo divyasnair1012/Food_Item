@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f1f2f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.food_itemproject.LoginActivity">
+
+
+    <!--<EditText
+        android:id="@+id/email"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signin"
+        android:layout_alignStart="@+id/newuser"
+        android:ems="10"
+        android:hint="Email-Id"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+         />
+-->
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Email-ID"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/email"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="145dp"
+        android:background="#414c4d"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ff7373" />
+
+    <Button
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signin"
+        android:layout_alignBottom="@+id/signin"
+        android:layout_alignParentStart="true"
+        android:text="New User?"
+        android:textAllCaps="false" />
+
+
+
+</RelativeLayout>

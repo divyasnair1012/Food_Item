@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.food_itemproject.CheckCustomerActivity">
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:fontFamily="cursive"
+        android:text="Admin Page"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="17dp" />
+    <!--tools:layout_editor_absoluteX="36dp"
+    tools:layout_editor_absoluteY="42dp"-->
+
+
+    <!--tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="16dp"-->
+    <!--tools:layout_editor_absoluteX="64dp"
+    tools:layout_editor_absoluteY="275dp"-->
+    <Button
+        android:id="@+id/cc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/admin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif"
+        android:text="Check Customer"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="220dp"
+         />
+
+    <!--tools:layout_editor_absoluteX="70dp"
+ tools:layout_editor_absoluteY="404dp"-->
+
+    <Button
+        android:id="@+id/af"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cc"
+        android:layout_below="@+id/cc"
+        android:layout_marginTop="54dp"
+        android:fontFamily="sans-serif"
+        android:text="Add Food"
+        android:textSize="20sp"
+        tools:ignore="UnknownId"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="123dp" />
+    <!--tools:layout_editor_absoluteX="63dp"
+    tools:layout_editor_absoluteY="154dp"
+
+-->
+    <Button
+        android:id="@+id/df"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/af"
+        android:layout_alignTop="@+id/af"
+        android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif"
+        android:text="Delate  Food"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+</RelativeLayout>

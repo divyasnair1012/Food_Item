@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.food_itemproject.TableOderPageActivity"
+    android:background="#00feee">
+
+    <TextView
+        android:id="@+id/bookingTable"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="Booking Table"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bookTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bookingTable"
+        android:layout_below="@+id/bookingTable"
+        android:text="Choose a Time"
+        android:textColor="#800000"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bookdate"
+        android:layout_below="@+id/bookingTable"
+        android:layout_marginStart="68dp" />
+
+    <TextView
+        android:id="@+id/bookdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner5"
+        android:layout_alignEnd="@+id/bookTime1"
+        android:text="Choose a date"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner4"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/bookdate" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookdate"
+        android:layout_marginTop="92dp"
+        android:layout_toEndOf="@+id/bookdate"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Check Availabilty"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
