@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Intent registration=new Intent(LoginActivity.this,RegisrationActivity.class);
-        String mail= email.getText().toString();//u derre
                 String password = pass.getText().toString();
 
                 if(email.getText().toString().equals(""))
@@ -67,15 +66,6 @@ public class LoginActivity extends AppCompatActivity {
                 else
                    new fetchOperation().execute(email.getText().toString(),pass.getText().toString());
 
-
-
-
-                /*else
-                {
-                    AlertDialog.Builder builder=new AlertDialog.Builder(LoginActivity.this);
-                    builder.setMessage("Entered incorrect Email or Password");
-                    AlertDialog dialog=builder.show();
-                }*/
             }
         });
     }
@@ -87,13 +77,13 @@ public class LoginActivity extends AppCompatActivity {
       JSONParserArray jparser = new JSONParserArray();
       JSONArray jArray=new JSONArray();
       List<NameValuePair> params =new ArrayList<>();
+        String username;
         @Override
         protected String doInBackground(String... values) {
-         //values[0]=email;
-          //values[1]=password;
-            String username=values[0];
+
+             username=values[0];
             String password=values[1];
-             params.add(new BasicNameValuePair("userid",username));//text  her as ma mob switch off aayi
+             params.add(new BasicNameValuePair("userid",username));
              params.add(new BasicNameValuePair("password",password));
 
             jArray=jparser.makeHttpRequest(URL,"GET",params);
@@ -126,6 +116,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
             Intent   foodOrder = new Intent(LoginActivity.this,SelectionPage.class);
             foodOrder.putExtra("name",result);
+            foodOrder.putExtra("email",username);
             startActivity(foodOrder);
             finish();
         }

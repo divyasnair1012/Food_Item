@@ -21,7 +21,7 @@ public class SelectionPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SelectionPage.this,TableOderPageActivity.class);
-                startActivity(intent);
+                startActivity(intent.putExtra("email",getIntent().getExtras().getString("email")));
             }
 
         });

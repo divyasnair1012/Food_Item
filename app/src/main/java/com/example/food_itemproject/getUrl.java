@@ -8,7 +8,7 @@ public class getUrl {
     String url;
     public String setUrl(String directory)//
     {
-        url = "http://10.20.0.27/minip/"+directory;//here na?//s
+        url = "http://192.168.0.10/minip/"+directory;//here na?//s
         return url;//send u a messag.your own design cheyoo..nale kanikande.s i have a slight modification .juz 2 mints yea
     }
 }
